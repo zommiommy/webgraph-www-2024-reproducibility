@@ -23,6 +23,6 @@ jobs:
     - name: Setup rust
       run: rustup default 1.75.0                                                                                        
     - name: Run Speed Test
-      run: cargo run --manifest-path $GITHUB_WORKSPACE/webgraph-rs --release --bin bench_bvgraph $GRAPH  -r $NODES_NUM -s
+      run: cargo run --manifest-path $GITHUB_WORKSPACE/webgraph-rs/Cargo.toml --release --bin bench_bvgraph $GRAPH  -r $NODES_NUM -s
     - name: Run BFS Test
-      run: cargo run --manifest-path $GITHUB_WORKSPACE/webgraph-rs --release --example bv_bf_visit $GRAPH --repeats 4 -s
+      run: cargo run --manifest-path $GITHUB_WORKSPACE/webgraph-rs/Cargo.toml --release --example bv_bf_visit $GRAPH --repeats 4 -s
