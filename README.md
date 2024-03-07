@@ -10,14 +10,14 @@ This is a reproducibility package for the paper
 
 ## Graphs
 
-### [EU-2015](https://law.di.unimi.it/webdata/eu-2015/)
+### [eu-2015](https://law.di.unimi.it/webdata/eu-2015/)
 
 ```bash
 wget http://data.law.di.unimi.it/webdata/eu-2015/eu-2015.properties
 wget http://data.law.di.unimi.it/webdata/eu-2015/eu-2015.graph
 ```
 
-### [En-wiki 2023](https://law.di.unimi.it/webdata/enwiki-2023/)
+### [enwiki-2023](https://law.di.unimi.it/webdata/enwiki-2023/)
 
 ```bash
 wget http://data.law.di.unimi.it/webdata/enwiki-2023/enwiki-2023.properties
