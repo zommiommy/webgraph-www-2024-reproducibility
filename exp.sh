@@ -23,10 +23,12 @@ BASENAME="$1"
 
 if ! [ -e "$BASENAME.properties" ]; then
   echo "The properties file $BASENAME.properties does not exist"
+    exit 1
 fi
 
 if ! [ -e "$BASENAME.graph" ]; then
   echo "The graph file $BASENAME.graph does not exist"
+    exit 1
 fi
 
 if ! [ -e "$BASENAME.offsets" ]; then
