@@ -1,4 +1,4 @@
-# webgraph-www-2024-reproducibility ![GitHub CI](https://github.com/zommiommy/webgraph-www-2024-reproducibility/actions/workflows/experiments.yml/badge.svg) ![license](https://img.shields.io/crates/l/webgraph) ![DOI/10.5281/zenodo.10793566](https://zenodo.org/badge/DOI/10.5281/zenodo.10793566.svg)
+# webgraph-www-2024-reproducibility ![GitHub CI](https://github.com/zommiommy/webgraph-www-2024-reproducibility/actions/workflows/experiments.yml/badge.svg) ![license](https://img.shields.io/crates/l/webgraph) [![DOI](https://zenodo.org/badge/768225801.svg)](https://zenodo.org/doi/10.5281/zenodo.10793565)
 
 This is a reproducibility package for the paper
 
