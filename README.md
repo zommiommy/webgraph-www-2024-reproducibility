@@ -89,7 +89,7 @@ rustup install 1.75.0
 ./exp.sh webgraph-rs/tests/data/cnr-2000
 ```
 
-The [CI file of this repo](https://github.com/zommiommy/webgraph-www-2024-reproducibility/blob/main/.github/workflows/experiments.yml)are an example about how to run the
+The [CI file of this repo](https://github.com/zommiommy/webgraph-www-2024-reproducibility/blob/main/.github/workflows/experiments.yml) are an example about how to run the
 benchmarks on a Linux x86_64 machine.
 
 `exp.sh` expects the Graal VM tar to be unzipped in the root of this
