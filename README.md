@@ -121,4 +121,4 @@ Note that this replication package uses the Rust version of WebGraph that was
 current at the time of the experiments. The crate is in continuous development,
 and in particular there is now a CLI interface accessing the binaries. To run
 these experiments with a newer version, please update the scripts to use the
-CLI, replacing (`webgraph bench bf_visit` instead of `bf_visit`).
+CLI, replacing `bf_visit` with `webgraph bench bf_visit`.
