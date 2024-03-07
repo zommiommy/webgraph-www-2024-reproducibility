@@ -1,4 +1,4 @@
-# webgraph-www-2024-replication ![GitHub CI](https://github.com/zommiommy/webgraph-www-2024-replication/actions/workflows/experiments.yml/badge.svg) ![license](https://img.shields.io/crates/l/webgraph)
+# webgraph-www-2024-reproducibility ![GitHub CI](https://github.com/zommiommy/webgraph-www-2024-replication/actions/workflows/experiments.yml/badge.svg) ![license](https://img.shields.io/crates/l/webgraph)
 
 This is a replication package for the paper
 
