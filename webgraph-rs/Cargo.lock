@@ -1841,7 +1841,6 @@ dependencies = [
  "lender",
  "libc",
  "log",
- "mem_dbg",
  "mmap-rs",
  "num_cpus",
  "rand",
