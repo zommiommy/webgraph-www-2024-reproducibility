@@ -31,7 +31,7 @@ The software heritage 2023-09-06 snapshot can be downloaded from their S3 bucket
 
 ## Machines
 
-Both `EU-2015` and `En-wiki2023` were tested on the following machine:
+Both `eu-2015` and `en-wiki2023` were tested on the following machine:
 
 ```
 Fedora Linux 38 (Workstation Edition)
