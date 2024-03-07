@@ -92,7 +92,7 @@ rustup install 1.75.0
 The [CI file of this repo](https://github.com/zommiommy/webgraph-www-2024-replication/blob/main/.github/workflows/experiments.yml)are an example about how to run the
 benchmarks on a Linux x86_64 machine.
 
-While `swh_exp.sh` expects the Graal VM tar to be unzipped in the root of this
+`exp.sh` expects the Graal VM tar to be unzipped in the root of this
 repository, it has to be executed from the root of this repository, and you have
 to modify the `GRAPH` export inside the script to set the path to where the SWH
 graph was downloaded. You probably also want to modify the `TMPDIR` export to
