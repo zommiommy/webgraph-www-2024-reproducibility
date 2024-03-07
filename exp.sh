@@ -2,6 +2,8 @@
 # Reset the environment so that we can run the experiments in a clean environment
 set -e
 
+echo "In order to reproduce accurately the results, ensure that grallvm's java is in the PATH"
+
 # Change the temporary directory to a non ramfs one to avoid OOM
 export TMPDIR="/tmp"
 # Enable cpu-specific optimizations
@@ -48,7 +50,7 @@ webgraph-rs/target/release/bench_bvgraph $BASENAME -r $NODES_NUM -s 2>&1 | tee "
 
 # Random access test java
 cat $BASENAME.graph >/dev/null
-graalvm-jdk-21.0.2+13.1/bin/java $JVMOPTS -Xmx600G \
+java $JVMOPTS -Xmx600G \
     it.unimi.dsi.big.webgraph.test.SpeedTest $BASENAME -r $NODES_NUM -m 2>&1 | tee "$BASENAME-succ-java.err"
 
 # BFS test rust
@@ -60,5 +62,5 @@ webgraph-rs/target/release/examples/bv_bf_visit $BASENAME --repeats 4 -s 2>&1 | 
 # BFS test java
 # Ensure it's loaded in memory (it task 40 seconds)
 cat $BASENAME.graph >/dev/null
-graalvm-jdk-21.0.2+13.1/bin/java $JVMOPTS -Xmx1024G \
+java $JVMOPTS -Xmx1024G \
     it.unimi.dsi.law.big.graph.BFS -m --repeats 3 $BASENAME - 2>&1 | tee "$BASENAME-java.err"

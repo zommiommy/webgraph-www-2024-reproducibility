@@ -24,4 +24,4 @@ jobs:
     - name: Extract cnr-2000 so we can test from scratch
       run: mkdir tmp && cp webgraph-rs/tests/data/cnr-2000.{graph,properties} tmp/ 
     - name: Run speed test
-      run: "./exp.sh tmp/cnr-2000"
+      run: "PATH=\"$GITHUB_WORKSPACE/graalvm-jdk-21.0.2+13.1/bin/:$PATH\" ./exp.sh tmp/cnr-2000"
