@@ -412,9 +412,9 @@ dependencies = [
 
 [[package]]
 name = "common_traits"
-version = "0.10.0"
+version = "0.10.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4e4fb5459a9efe025d9e56964f170f75c0513b9bb08b42f41c2a33c1bd4348a1"
+checksum = "6963264945d9ccb66c17ba1cc1af34d06812f45bc14c250dda5a1566905b0af0"
 dependencies = [
  "anyhow",
  "half",
@@ -1528,7 +1528,7 @@ dependencies = [
  "bitflags 2.4.2",
  "bytemuck",
  "clap",
- "common_traits 0.10.0",
+ "common_traits 0.10.2",
  "derivative",
  "derive_setters",
  "dsi-progress-logger",
@@ -1829,7 +1829,7 @@ dependencies = [
  "bitvec",
  "bytemuck",
  "clap",
- "common_traits 0.10.0",
+ "common_traits 0.10.2",
  "dary_heap",
  "dsi-bitstream",
  "dsi-progress-logger",
