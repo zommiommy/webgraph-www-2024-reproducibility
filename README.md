@@ -98,8 +98,8 @@ to modify the `GRAPH` export inside the script to set the path to where the SWH
 graph was downloaded. You probably also want to modify the `TMPDIR` export to
 use a folder with enough space.
 
-To avoid caching differences, before running every benchmark we run `cat $GRAPH
->/dev/null` to bring force loading of the graph and get into a consistent state.
+To avoid caching differences, before running every benchmark we run 
+`cat $GRAPH >/dev/null` to bring force loading of the graph and get into a consistent state.
 
 ## WebGraph version
 
