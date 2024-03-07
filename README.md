@@ -1,4 +1,4 @@
-# webgraph-www-2024-replication ![GitHub CI](https://github.com/zommiommy/webgraph-www-2024-replication/actions/workflows/rust.yml/badge.svg) ![GitHub CI](https://github.com/zommiommy/webgraph-www-2024-replication/actions/workflows/java.yml/badge.svg) ![license](https://img.shields.io/crates/l/webgraph)
+# webgraph-www-2024-replication ![GitHub CI](https://github.com/zommiommy/webgraph-www-2024-replication/actions/workflows/experiments.yml/badge.svg) ![license](https://img.shields.io/crates/l/webgraph)
 
 This is a replication package for the paper
 
@@ -81,30 +81,16 @@ rust](https://www.rust-lang.org/tools/install) and running:
 rustup install 1.75.0
 ```
 
-*This version of `webgraph-rs` [is not compatible with newer Rust
-versions](https://github.com/rust-lang/rust/issues/121604#event-11935096017),
-use the [newest version from github](https://github.com/vigna/webgraph-rs) if
-that's needed.*
-
 ## Scripts
 
-- `succ.sh` was used to run the Successors benchmarks on `eu-2015` and `enwiki-2023`.
-- `bfs.sh` was used to run the BFS benchmarks on `eu-2015` and `enwiki-2023`.
-- `swh_exp.sh` was used to run both benchmarks on the `Swh 2023-09-06` graph.
-
-`succ.sh` and `bfs.sh` have to be run from the `webgraph-rs` folder in this repo
-and they expect the two graphs to be inside that folder. Moreover, they require
-you to set the `CLASSPATH` env var to the files inside the `jars-exp` folder,
-e.g.:
+- `exp.sh` Expects the graph basename as argument e.g.:
 
 ```shell
-export CLASSPATH=$(find -iname jars-exp/\*.jar | paste -d: -s -)
+./exp.sh webgraph-rs/tests/data/cnr-2000
 ```
 
-The CI files of this repo
-([Rust](https://github.com/zommiommy/webgraph-www-2024-replication/blob/main/.github/workflows/rust.yml),
-[Java](https://github.com/zommiommy/webgraph-www-2024-replication/blob/main/.github/workflows/java.yml))
-are an example of how to run the benchmarks on a Linux x86_64 machine.
+The [CI file of this repo](https://github.com/zommiommy/webgraph-www-2024-replication/blob/main/.github/workflows/experiments.yml)are an example about how to run the
+benchmarks on a Linux x86_64 machine.
 
 While `swh_exp.sh` expects the Graal VM tar to be unzipped in the root of this
 repository, it has to be executed from the root of this repository, and you have
@@ -122,3 +108,8 @@ current at the time of the experiments. The crate is in continuous development,
 and in particular there is now a CLI interface accessing the binaries. To run
 these experiments with a newer version, please update the scripts to use the
 CLI, replacing `bf_visit` with `webgraph bench bf_visit`.
+
+This version of `webgraph-rs` [is not compatible with newer Rust
+versions](https://github.com/rust-lang/rust/issues/121604#event-11935096017),
+use the [newest version from github](https://github.com/vigna/webgraph-rs) if
+that's needed.
