@@ -88,20 +88,19 @@ rustup install 1.75.0
 
 ## Scripts
 
-- `exp.sh` Expects the graph basename as argument e.g.:
+`exp.sh` Expects the graph basename as argument e.g.:
 
 ```shell
 ./exp.sh webgraph-rs/tests/data/cnr-2000
 ```
 
-The [CI file of this repo](https://github.com/zommiommy/webgraph-www-2024-reproducibility/blob/main/.github/workflows/experiments.yml) are an example about how to run the
-benchmarks on a Linux x86_64 machine.
+The [CI file of this repo](https://github.com/zommiommy/webgraph-www-2024-reproducibility/blob/main/.github/workflows/experiments.yml) 
+is an example of how to run the benchmarks on a Linux x86_64 machine.
 
-`exp.sh` expects the Graal VM tar to be unzipped in the root of this
-repository, it has to be executed from the root of this repository, and you have
-to modify the `GRAPH` export inside the script to set the path to where the SWH
-graph was downloaded. You probably also want to modify the `TMPDIR` export to
-use a folder with enough space.
+You probably also want to modify the `TMPDIR` export to
+use a folder with enough space if your `/tmp` is a ramfs.
+
+***Remember to set GraalVM as the used java by setting the `PATH` env var.***
 
 To avoid caching differences, before running every benchmark we run 
 `cat $GRAPH >/dev/null` to bring force loading of the graph and get into a consistent state.
@@ -115,6 +114,6 @@ these experiments with a newer version, please update the scripts to use the
 CLI, replacing `bf_visit` with `webgraph bench bf_visit`.
 
 This version of `webgraph-rs` [is not compatible with newer Rust
-versions](https://github.com/rust-lang/rust/issues/121604#event-11935096017),
-use the [newest version from github](https://github.com/vigna/webgraph-rs) if
-that's needed.
+versions](https://github.com/rust-lang/rust/issues/121604#event-11935096017) 
+because of a problem inside `common_traits`, you can change it to 
+`common_traits = "0.10.0"` inside `webgraph-rs/Cargo.toml`.
