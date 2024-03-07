@@ -32,7 +32,7 @@ Linux blew 6.5.12-200.fc38.x86_64 #1 SMP PREEMPT_DYNAMIC Mon Nov 20 22:12:09 UTC
 Intel I7-12700kf CPU @ 3.60GHz
 64GB RAM
 ```
-while the `Swh 2023-09-06` was tested on:
+while `Swh 2023-09-06` was tested on:
 ```
 Debian GNU/Linux 11 (bullseye)
 Linux maxxi 5.10.0-26-amd64 #1 SMP Debian 5.10.197-1 (2023-09-29) x86_64 GNU/Linux
