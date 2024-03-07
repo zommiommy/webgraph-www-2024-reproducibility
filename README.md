@@ -1,6 +1,6 @@
-# webgraph-www-2024-reproducibility ![GitHub CI](https://github.com/zommiommy/webgraph-www-2024-replication/actions/workflows/experiments.yml/badge.svg) ![license](https://img.shields.io/crates/l/webgraph)
+# webgraph-www-2024-reproducibility ![GitHub CI](https://github.com/zommiommy/webgraph-www-2024-reproducibility/actions/workflows/experiments.yml/badge.svg) ![license](https://img.shields.io/crates/l/webgraph)
 
-This is a replication package for the paper
+This is a reproducibility package for the paper
 
     Tommaso Fontana, Sebastiano Vigna, and Stefano Zacchiroli. 2024.
     WebGraph: The Next Generation (Is in Rust).
@@ -89,7 +89,7 @@ rustup install 1.75.0
 ./exp.sh webgraph-rs/tests/data/cnr-2000
 ```
 
-The [CI file of this repo](https://github.com/zommiommy/webgraph-www-2024-replication/blob/main/.github/workflows/experiments.yml)are an example about how to run the
+The [CI file of this repo](https://github.com/zommiommy/webgraph-www-2024-reproducibility/blob/main/.github/workflows/experiments.yml)are an example about how to run the
 benchmarks on a Linux x86_64 machine.
 
 `exp.sh` expects the Graal VM tar to be unzipped in the root of this
@@ -103,7 +103,7 @@ To avoid caching differences, before running every benchmark we run
 
 ## WebGraph version
 
-Note that this replication package uses the Rust version of WebGraph that was
+Note that this reproducibility package uses the Rust version of WebGraph that was
 current at the time of the experiments. The crate is in continuous development,
 and in particular there is now a CLI interface accessing the binaries. To run
 these experiments with a newer version, please update the scripts to use the
