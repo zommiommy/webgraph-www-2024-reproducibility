@@ -63,6 +63,11 @@ ee6286773c659afeefdf2f989a133e7a631c60897f2263ac183794ee1d6438f4  graalvm-jdk-21
 The same version for other OSs and CPUs can be downloaded
 [here](https://www.oracle.com/java/technologies/javase/graalvm-jdk21-archive-downloads.html).
 
+Remember to set the `PATH` environment variable in order to use this jvm, e.g:
+```shell
+$ export PATH="graalvm-jdk-21.0.2+13.1/bin/:$PATH"
+```
+
 ## Rust version
 
 The following Rust tools were used on both machines:
