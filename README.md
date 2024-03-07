@@ -116,4 +116,5 @@ CLI, replacing `bf_visit` with `webgraph bench bf_visit`.
 This version of `webgraph-rs` [is not compatible with newer Rust
 versions](https://github.com/rust-lang/rust/issues/121604#event-11935096017) 
 because of a problem inside `common_traits`, you can change it to 
-`common_traits = "0.10.0"` inside `webgraph-rs/Cargo.toml`.
+`common_traits = "0.10.0"` inside `webgraph-rs/Cargo.toml` in order to use 
+newer versions of Rust.
