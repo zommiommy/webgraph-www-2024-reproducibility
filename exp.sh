@@ -22,20 +22,20 @@ fi
 BASENAME="$1"
 
 if ! [ -e "$BASENAME.properties" ]; then
-  echo "The properties file $BASENAME.properties does not exists"
+  echo "The properties file $BASENAME.properties does not exist"
 fi
 
 if ! [ -e "$BASENAME.graph" ]; then
-  echo "The graph file $BASENAME.graph does not exists"
+  echo "The graph file $BASENAME.graph does not exist"
 fi
 
 if ! [ -e "$BASENAME.offsets" ]; then
-    echo "The offsets don't exists, building them"
+    echo "The offsets don't exist, building them"
     cargo run --release --manifest-path webgraph-rs/Cargo.toml --bin build_offsets $BASENAME 
 fi
 
 if ! [ -e "$BASENAME.ef" ]; then
-    echo "The elias-fano don't exists, building it"
+    echo "The elias-fano doesn't exists, building it"
     cargo run --release --manifest-path webgraph-rs/Cargo.toml --bin build_ef $BASENAME 
 fi
 
