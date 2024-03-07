@@ -1,5 +1,11 @@
 # webgraph-www-2024-replication
-WebGraph: The Next Generation (Is in Rust) — Replication Package
+
+Replication package for the paper:
+
+    Tommaso Fontana, Sebastiano Vigna, and Stefano Zacchiroli. 2024.
+    WebGraph: The Next Generation (Is in Rust).
+	In Companion Proceedings of the ACM Web Conference 2024 (WWW ’24 Companion), May 13–17, 2024, Singapore, Singapore. ACM, New York, NY, USA, 4 pages.
+	https://doi.org/10.1145/3589335.3651581
 
 ## Graphs
 
